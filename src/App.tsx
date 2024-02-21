@@ -10,7 +10,7 @@ type Point = {
 
 function App() {
 
-    const m0 = 1.257e-6;
+    const m0 = 1.256637e-6;
 
     const B = (
         x:          number,
@@ -91,7 +91,7 @@ function App() {
         <div>
 
             <Plot
-                width={800}
+                width={1400}
                 height={800}
             >
 
