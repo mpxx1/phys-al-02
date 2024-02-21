@@ -56,7 +56,7 @@ function App() {
         const trn: number = Number.parseFloat(turns);
         const amp: number = Number.parseFloat(amperage);
 
-        return rangeB(0, 10, 0.5, rad, trn, amp);
+        return rangeB(-10, 10, 0.5, rad, trn, amp);
     }
 
     return (
