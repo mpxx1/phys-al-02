@@ -20,7 +20,8 @@ function App() {
     ) =>  {
 
         return (
-            (m0 * turns * amperage * Math.pow(radius, 2)) / (2 * Math.pow(radius * radius + x * x, 1.5))
+            (m0 * turns * amperage) / (radius * 2) *
+            ((Math.pow((1 + (Math.pow(x / radius - 0.5, 2))), -3/2)) + (Math.pow((1 + (Math.pow(x / radius + 0.5, 2))), -3/2)))
         );
     }
 
