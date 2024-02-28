@@ -57,7 +57,7 @@ function App() {
         const trn: number = Number.parseFloat(turns);
         const amp: number = Number.parseFloat(amperage);
 
-        return rangeB(-10, 10, 0.5, rad, trn, amp);
+        return rangeB(-100, 100, 0.5, rad, trn, amp);
     }
 
     return (
@@ -92,8 +92,9 @@ function App() {
         <div>
 
             <Plot
-                width={1400}
+                width={900}
                 height={800}
+                margin={{bottom: 50, left: 90, top: 50, right: 100}}
             >
 
                 <Heading
